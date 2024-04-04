@@ -8,3 +8,6 @@ How to:
 - Ensure the script is started in your server.cfg.
   
 In-game, use the /blackbars command to toggle the blackbars on and off.
+
+Video:
+https://discord.gg/cDSFa4MxTZ
