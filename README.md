@@ -14,3 +14,6 @@ https://discord.gg/cDSFa4MxTZ
 
 ![steff-blackbars](https://github.com/SteffWS/steff-blackbars/assets/84989476/8ab48252-9753-45fb-8e19-8d4d143c7879)
 ![steff-noblackbar](https://github.com/SteffWS/steff-blackbars/assets/84989476/dbd07e78-123a-4364-b939-451632999ff9)
+
+
+https://github.com/SteffWS/steff-blackbars/assets/84989476/f60a058e-9944-4487-ba06-8362b95fc307
