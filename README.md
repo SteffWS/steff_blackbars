@@ -9,7 +9,7 @@ How to:
   
 In-game, use the /blackbars command to toggle the blackbars on and off.
 
-Video:
+Join my discord:
 https://discord.gg/cDSFa4MxTZ
 
 ![steff-blackbars](https://github.com/SteffWS/steff-blackbars/assets/84989476/8ab48252-9753-45fb-8e19-8d4d143c7879)
