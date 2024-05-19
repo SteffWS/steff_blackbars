@@ -23,6 +23,7 @@ ensure steff-blackbars
 ## Usage
 In-Game Command:
 Use the following command in-game to toggle the blackbars on and off:
+
 /blackbars
 
 ### Example
