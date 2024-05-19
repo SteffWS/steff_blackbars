@@ -9,11 +9,16 @@ Enhance your RedM experience with the Steff Scripts Blackbars, a simple yet powe
 - Minimal Impact: Designed to be lightweight and easy to integrate into any server.
 
 ## Installation
-1. Download the Script: Clone or download the script from the GitHub repository.
+#### 1. Download the Script: 
+Clone or download the script from the GitHub repository.
 
-2. Add to Your Resources: Place the steff-blackbars folder in your RedM server resources directory.
+#### 2. Add to Your Resources: 
+Place the steff-blackbars folder in your RedM server resources directory.
 
-3. Update server.cfg: Add the following line to your server.cfg to ensure the resource is started.
+#### 3. Update server.cfg: 
+Add the following line to your server.cfg to ensure the resource is started.
+
+ensure steff-blackbars
 
 ## Usage
 In-Game Command:
