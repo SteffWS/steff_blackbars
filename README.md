@@ -27,4 +27,5 @@ https://streamable.com/avrdb3
 For any issues, suggestions, or custom requests, join our Discord community.
 
 Our Discord: https://discord.gg/SyNGm3eXmP
+
 Project Link: https://github.com/SteffWS/steff-blackbars
