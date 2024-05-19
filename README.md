@@ -1,4 +1,4 @@
-# Steff Scripts Blackbars
+# Steff Scripts Blackbars For RedM
 
 ## Overview
 Enhance your RedM experience with the Steff Scripts Blackbars, a simple yet powerful script that toggles cinematic blackbars on your screen. When activated, blackbars appear at the top and bottom, giving your game a cinematic effect. Use the /blackbars command in-game to toggle the effect on and off.
