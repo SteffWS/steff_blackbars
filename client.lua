@@ -1,25 +1,87 @@
-blackBars = false
+local blackBars = false
+local barHeight = 0.0
+local targetHeight = 0.0
+local transitionSpeed = 0.005
 
-local function toggleBlackBars()
-    blackBars = not blackBars
-    if blackBars then
+-- Open the blackbars menu
+RegisterCommand("blackbars", function()
+    lib.registerContext({
+        id = 'blackbars_menu',
+        title = 'Cinematic Blackbars',
+        options = {
+            {
+                title = 'Low',
+                description = 'Small bars',
+                icon = 'minus',
+                onSelect = function()
+                    setBlackBars(true, 0.05)
+                end,
+            },
+            {
+                title = 'Medium',
+                description = 'Medium bars',
+                icon = 'film',
+                onSelect = function()
+                    setBlackBars(true, 0.10)
+                end,
+            },
+            {
+                title = 'High',
+                description = 'Tall bars',
+                icon = 'film',
+                onSelect = function()
+                    setBlackBars(true, 0.15)
+                end,
+            },
+            {
+                title = 'Remove',
+                icon = 'x',
+                description = 'Remove blackbars',
+                onSelect = function()
+                    setBlackBars(false)
+                end,
+            },
+        }
+    })
+
+    lib.showContext('blackbars_menu')
+end)
+
+function setBlackBars(state, height)
+    blackBars = state
+    if state then
+        targetHeight = height
         DisplayRadar(false)
     else
+        targetHeight = 0.0
         DisplayRadar(true)
     end
 end
 
-RegisterCommand("blackbars", function()
-    toggleBlackBars()
-end)
-
-Citizen.CreateThread(function()
+-- Draw cinematic blackbars
+CreateThread(function()
     while true do
-        Citizen.Wait(5)
+        Wait(0)
+        if blackBars or barHeight > 0.0 then
+            -- Animate the bars up/down
+            if math.abs(barHeight - targetHeight) > 0.001 then
+                if barHeight < targetHeight then
+                    barHeight = barHeight + transitionSpeed
+                    if barHeight > targetHeight then barHeight = targetHeight end
+                else
+                    barHeight = barHeight - transitionSpeed
+                    if barHeight < targetHeight then barHeight = targetHeight end
+                end
+            end
 
-        if blackBars then
-            DrawRect(1.0, 1.0, 2.0, 0.25, 0, 0, 0, 255) -- x, y, width, height, red, green, blue, alpha
-            DrawRect(1.0, 0.0, 2.0, 0.25, 0, 0, 0, 255)
+            -- Hide HUD elements
+            HideHudAndRadarThisFrame()
+
+            -- Draw top and bottom black bars
+            DrawRect(0.5, 0.0 + barHeight / 2, 1.0, barHeight, 0, 0, 0, 255)
+            DrawRect(0.5, 1.0 - barHeight / 2, 1.0, barHeight, 0, 0, 0, 255)
+        else
+            Wait(100)
         end
     end
 end)
