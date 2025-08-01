@@ -2,7 +2,7 @@
 
 Adds toggleable cinematic blackbars with smooth animation and customizable height using `ox_lib`.
 
-[<img width="1536" height="1024" alt="job_center-preview" src="https://github.com/user-attachments/assets/eed6d727-a07c-44c1-a34e-45dfee70d385" />](https://imgur.com/Ft0vy24)
+[<img width="1536" height="1024" alt="job_center-preview" src="[https://github.com/user-attachments/assets/eed6d727-a07c-44c1-a34e-45dfee70d385](https://imgur.com/Ft0vy24)" />]
 
 ### YouTube Preview
 [https://youtu.be/CmEO9HqPNRY](https://youtu.be/YOohGfJtbvk)
