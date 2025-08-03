@@ -12,7 +12,7 @@ RegisterCommand("blackbars", function()
             {
                 title = 'Low',
                 description = 'Small bars',
-                icon = 'minus',
+                icon = 'film',
                 onSelect = function()
                     setBlackBars(true, 0.05)
                 end,
