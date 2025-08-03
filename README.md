@@ -33,5 +33,7 @@ ensure steff_blackbars
 If you like this script, consider giving the repository a ⭐️ - it lets me know you like it!
 
 ## 🎯 SEO
-
 fivem, gta5, blackbars, cinematic, cinematic mode, rp camera, fivem rp, ox_lib, hud remover, immersive roleplay, cutscene tool, drawrect, qbcore, fivem scripts, fivem blackbars, camera effects, fivem visual, fivem client scripts, fivem cinematic, rp tools, rp visuals, fivem hud toggle
+
+## Discord 
+https://discord.gg/jvS6SbtbAm
